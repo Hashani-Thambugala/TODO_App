@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/addupdatebg"
+    tools:context=".AddNewActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="362dp"
+            android:layout_height="276dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="92dp"
+            android:autofillHints=""
+            android:background="@drawable/pinkborder"
+            android:fontFamily="@font/aladin"
+            android:gravity="top"
+            android:hint="@string/enter_the_description"
+            android:inputType=""
+            android:padding="12dp"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleEditText" />
+
+        <ImageButton
+            android:id="@+id/saveButton"
+            android:layout_width="71dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="142dp"
+            android:contentDescription="@string/todo"
+            android:onClick="saveNote"
+            android:src="@drawable/baseline_arrow_forward_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/addNoteHeading"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/addNoteHeading"
+            android:layout_width="199dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/aladin"
+            android:text="@string/add_note"
+            android:textColor="@color/brown"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="365dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="52dp"
+            android:autofillHints=""
+            android:background="@drawable/pinkborder"
+            android:fontFamily="@font/aladin"
+            android:hint="@string/enter_the_title"
+            android:inputType=""
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addNoteHeading" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
